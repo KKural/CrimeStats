@@ -1,0 +1,32 @@
+- Class: meta
+  Course: CrimeStats
+  Lesson: Basic R for Criminology
+  Author: Kural
+  Type: Standard
+  Organization: Ghent University
+
+- Class: text
+  Output: "Welcome to Basic R for Criminology. Let's begin!"
+
+- Class: command
+  Output: "Assign the number 146 to a variable called `burglaries`."
+  CorrectAnswer: "burglaries <- 146"
+  AnswerTests: omnitest(correctExpr='burglaries <- 146')
+  Hint: "Use the assignment operator `<-`, e.g., x <- 5"
+
+- Class: text
+  Output: "Great! Now let's think about variable types."
+
+- Class: mult_question
+  Output: "What type of variable is `offender_gender` with values: 'Male', 'Female'?"
+  AnswerChoices: 
+    - Nominal
+    - Ordinal
+    - Interval
+    - Ratio
+  CorrectAnswer: "Nominal"
+  AnswerTests: omnitest(correctVal='Nominal')
+  Hint: "Think about categories without inherent order."
+
+- Class: text
+  Output: "Nice work! You've completed this short lesson."
